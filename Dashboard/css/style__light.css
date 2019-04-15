@@ -1,0 +1,114 @@
+body{
+  background:#FAFFFF;
+}
+.scheme--switcher img{
+  transform:none;
+}
+.scheme--switcher img:hover{
+  transform:rotate();
+  filter:invert(1);
+}
+.scheme--switcher:hover img{
+  opacity: 0;
+  animation:fadeOut .1s linear;
+  z-index:4
+}
+.scheme--switcher:hover::before{
+  content:url('../img/icons/switch--light.png');
+  position:absolute;
+  left:5px;
+  top:-13px;
+  transform:scale(.45);
+  animation:fadeIn .4s linear;
+}
+.choose--option__dropdown li{
+  color:#33383E;
+}
+.choose--option__dropdown li:hover{
+  background:#eaf2ff;
+  color:#33383E;
+}
+.myblocks--intro{
+  background:#eaf2ff;
+  box-shadow:0 0 12px 1px rgba(19,0,57,.05);
+  border-bottom:1px solid #D3D3D3;
+  color:#858585;
+}
+.block-added-td,
+.block-added-pf{
+  background:#f2f5ff;
+  border-bottom:1px solid #EAEAEA;
+}
+.block-added-pf input[type=text],
+.block-added-td input[type=text],
+.block-added-pf input[type=number],
+.block-added-td input[type=number],
+.current--position{
+  background: #f6faff;
+  border:1px solid #EAEAEA;
+}
+.block-added-pf input[type=text]::placeholder,
+.block-added-pf input[type=number]::placeholder,
+.block-added-td input[type=text]::placeholder,
+.block-added-td input[type=number]::placeholder{
+  color:#555;
+}
+.block-added-pf input[type=text]:focus,
+.block-added-td input[type=focus]:focus,
+.block-added-pf input[type=text]:focus,
+.block-added-td input[type=focus]:focus{
+  background:transparent;
+  border-bottom:2px solid #B3F33F;
+  color:#555;
+}
+.submit--input:hover{
+  background:#cff787;
+  border:2px solid #faffff;
+  color:#23292e;
+}
+.user--infos__outer{
+  background:#f2f5ff;
+  border-right:1px solid #e0e4e8;
+  height:100vh;
+  position:fixed;
+  top:80px;
+  left:0;
+  width:200px;
+}
+.user--infos__inner{
+  border-bottom:1px solid #e0e4e8;
+  padding:40px 2% 30px 2%;
+  text-align:center;
+}
+.user--infos__avatar{
+  border-radius:100%
+}
+.user--infos__pseudo{
+  color:#888;
+  font-size:13px;
+  margin:10px auto;
+}
+.user--infos__pseudo:before{
+  color:#7F3FF3;
+  content:'@';
+  display:inline-block;
+  font-size:17px;
+}
+.user--nav__outer li{
+  border-bottom:1px solid #e0e4e8;
+  color:#777;
+}
+.user--nav__outer li:hover{
+  background:#eaf2ff;
+  color:#595959;
+}
+.user--nav__outer li:first-child{
+  background:#33383E;
+}
+.user--nav__outer ul #nav--title{
+  background:#33383E;
+  color:#FAFFFF;
+}
+.user--nav__outer ul #nav--title:hover{
+  color:#FAFFFF;
+}
